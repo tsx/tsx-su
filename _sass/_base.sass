@@ -1,0 +1,98 @@
+$silver: #fbfbfb
+
+// http://www.colourlovers.com/palette/27905/threadless
+
+//CFF09E
+//A8DBA8
+$lightgray: #79BD9A
+$gray: #3B8686
+$black: #0B486B
+
+=margin($size)
+  margin-bottom: $size
+  margin-top: $size
+
+=margin-3em
+  +margin(3em)
+
+.container
+  width: 840px
+  // 12*70
+
+a
+  color: $gray
+  text-decoration: underline
+  &:hover
+    color: $lightgray
+
+.top-bar
+  +margin(3em)
+  a
+    display: inline-block
+    font-size: 1.4em
+    margin-right: 0.8em
+
+.sidebar
+  +margin(3em)
+  img
+    width: 100%
+  h3
+    font-size: 1.9em
+
+.social-links
+  +margin(1em)
+  &:after
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+  a
+    display: block
+    float: left
+    margin-right: 1em
+    border: 2px solid $gray
+    border-radius: 50%
+    text-align: center
+    font-size: 2em
+    line-height: 1.6em
+    width: 1.8em
+    height: 1.8em
+    transform: translateZ(0)
+    transition-property: transform, border-color, color
+    transition-duration: 0.2s
+    &:hover
+      border-color: $lightgray
+      transform: scale(1.1)
+
+.footer
+  padding-top: 2em
+  padding-bottom: 2em
+  margin-top: 2em
+  color: gray
+
+body
+  color: $black
+  background-color: $silver
+  background-image: radial-gradient(circle at 100% 150%, $silver 24%, white 25%, white 28%, $silver 29%, $silver 36%, white 36%, white 40%, transparent 40%, transparent), radial-gradient(circle at 0 150%, $silver 24%, white 25%, white 28%, $silver 29%, $silver 36%, white 36%, white 40%, transparent 40%, transparent), radial-gradient(circle at 50% 100%, white 10%, $silver 11%, $silver 23%, white 24%, white 30%, $silver 31%, $silver 43%, white 44%, white 50%, $silver 51%, $silver 63%, white 64%, white 71%, transparent 71%, transparent), radial-gradient(circle at 100% 50%, white 5%, $silver 6%, $silver 15%, white 16%, white 20%, $silver 21%, $silver 30%, white 31%, white 35%, $silver 36%, $silver 45%, white 46%, white 49%, transparent 50%, transparent), radial-gradient(circle at 0 50%, white 5%, $silver 6%, $silver 15%, white 16%, white 20%, $silver 21%, $silver 30%, white 31%, white 35%, $silver 36%, $silver 45%, white 46%, white 49%, transparent 50%, transparent)
+  background-size: 100px 50px
+
+h1, h2, h3, h4, h5, h6
+  font-family: 'Roboto'
+  font-weight: 200
+  a
+    text-decoration: none
+  a:hover
+    text-decoration: none
+
+.post-image
+  float: left
+  width: 50%
+  margin-right: 1em
+  margin-bottom: 1em
+
+.post-content
+  text-align: justify
+
+.left-column
+  background: white

@@ -1,0 +1,13 @@
+# Site settings
+title: Vyacheslav Tverskoy
+email: tsx@tsx.su
+description: > # this means to ignore newlines until "baseurl:"
+  I help solving business problems with technology and software.
+  Software Architect, Principal Engineer.
+  In-depth knowledge of Java, Ruby, and web stack.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://tsx.su" # the base hostname & protocol for your site
+twitter_username: tsxxst
+
+# Build settings
+markdown: kramdown
