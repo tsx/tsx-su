@@ -15,10 +15,6 @@ $black: #0B486B
 =margin-3em
   +margin(3em)
 
-.container
-  width: 840px
-  // 12*70
-
 a
   color: $gray
   text-decoration: underline
@@ -26,21 +22,18 @@ a
     color: $lightgray
 
 .top-bar
-  +margin(3em)
   a
     display: inline-block
     font-size: 1.4em
     margin-right: 0.8em
 
 .sidebar
-  +margin(3em)
   img
     width: 100%
   h3
     font-size: 1.9em
 
 .social-links
-  +margin(1em)
   &:after
     content: "."
     display: block
@@ -66,13 +59,13 @@ a
       transform: scale(1.1)
 
 .footer
-  padding-top: 2em
-  padding-bottom: 2em
   margin-top: 2em
+  margin-bottom: 2em
   color: gray
 
 body
   color: $black
+  padding-top: 2em
 
 h1, h2, h3, h4, h5, h6
   font-family: 'Roboto'

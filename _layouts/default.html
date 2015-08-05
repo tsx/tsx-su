@@ -6,14 +6,21 @@
   <body class="{{page.class}}">
 <div class="container">
 <div class="row">
-<div class="col-xs-8 left-column">
+<div class="col-xs-12 col-sm-4 pull-right sidebar">
+	<img src="/img/photo.jpg" class="img-circle" />
+	<h3>Vyacheslav Tverskoy</h3>
+	{% include social-links.html %}
+<hr />
+</div>
+<div class="col-xs-12 col-sm-8">
   {% include header.html %}
     {{ content }}
 </div>
-<div class="col-xs-4">
+<div class="col-xs-12 col-sm-4 pull-right sidebar">
   {% include sidebar.html %}
 </div>
 </div>
+<hr>
     {% include footer.html %}
 
 <!--script>
