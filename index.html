@@ -12,5 +12,16 @@ layout: default
 You can take a look at projects <a href="/portfolio.html">I've participated in or created myself</a>, read my <a href="/blog.html">blog posts</a>, or contact me using email or social networks (on the right).
 </p>
 <p>
-I currently work at <a href="http://maginfo.com">Maginfo</a>, creating a product that helps people discover their data.
+I currently work at <a href="http://maginfo.com">Maginfo</a>, creating a product that helps engineers discover their data.
 </p>
+
+<hr />
+
+<h3>My latest post:</h3>
+{% assign post = site.posts.first %}
+{% include post-content.html %}
+
+<hr />
+
+<p><a href="/blog.html">Read other blog posts</a> | <a href="https://twitter.com/intent/tweet?screen_name=tsxxst">Tweet me</a></p>
+
