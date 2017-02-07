@@ -11,3 +11,10 @@ twitter_username: tsxxst
 
 # Build settings
 markdown: kramdown
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Guardfile
+  - update.sh
+  - s3_website.yml

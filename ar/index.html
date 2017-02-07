@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+	<h1>Accidental Recruiter</h1>
+<div class="jumbotron">
+	<p>Life-time developer screening job applications. How fun does that sound? It turns out, quite fun and a great learning experience. In this blog post series, I will be sharing insights and helping you get more interviews than you thought possible.</p>
+</div>
+{% for post in site.categories.ar %}
+<h2><a href="{{post.url}}">{{post.title}}</a></h2>
+<p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+{{post.excerpt}}
+
+<p><a class="btn btn-lg btn-primary">Read &rarr;</a></p>
+{% endfor %}
