@@ -1,3 +1,3 @@
 #!/bin/bash +xe
-jekyll build
-s3_website push
+bundle exec jekyll build
+bundle exec s3_website push
