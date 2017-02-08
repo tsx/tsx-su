@@ -11,5 +11,5 @@ layout: default
 <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
 {{post.excerpt}}
 
-<p><a class="btn btn-lg btn-primary">Read &rarr;</a></p>
+<p><a href="{{post.url}}" class="btn btn-lg btn-primary">Read &rarr;</a></p>
 {% endfor %}
