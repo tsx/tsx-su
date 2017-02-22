@@ -2,7 +2,7 @@
 layout: default
 ---
 {% for post in site.posts %}
-	{% include post-content.html %}
+{% include post-preview.html %}
 {% endfor %}
 
 <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

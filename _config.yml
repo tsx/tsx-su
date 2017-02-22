@@ -11,6 +11,7 @@ twitter_username: tsxxst
 
 # Build settings
 markdown: kramdown
+future: false
 
 exclude:
   - Gemfile
@@ -18,3 +19,4 @@ exclude:
   - Guardfile
   - update.sh
   - s3_website.yml
+  - TODO

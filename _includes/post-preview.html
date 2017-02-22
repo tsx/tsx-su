@@ -6,5 +6,6 @@
 {% if post.image %}
 	<img src="{{post.image}}" class="post-image">
 {% endif %}
-{{ post.content }}
+{{ post.excerpt }}
+<p><b><a href="{{post.url}}" class="btn btn-lg btn-primary">Read &rarr;</a></b></p>
 </div>

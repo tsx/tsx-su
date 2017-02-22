@@ -3,26 +3,11 @@
 
   {% include head.html %}
 
-  <body class="{{page.class}}">
-<div class="container">
-<div class="row">
-<div class="col-xs-12 col-sm-4 pull-right sidebar">
-	<img src="/img/photo.jpg" class="img-circle" />
-	<h3>Vyacheslav Tverskoy</h3>
-	<p>I help businesses to <b>save money, earn more, and solve problems</b> by creating software that's easy to use, runs fast and scales.</p>
-	{% include social-links.html %}
-<hr />
-</div>
-<div class="col-xs-12 col-sm-8">
-  {% include header.html %}
-    {{ content }}
-</div>
-<div class="col-xs-12 col-sm-4 pull-right sidebar">
-  {% include sidebar.html %}
-</div>
-</div>
+<body class="{{page.class}}">
+{% include header.html %}
+{{ content }}
 <hr>
-    {% include footer.html %}
+{% include footer.html %}
 
   </body>
 

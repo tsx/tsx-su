@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: ar
 title: Accidental Recruiter
 category: ar
 ---
