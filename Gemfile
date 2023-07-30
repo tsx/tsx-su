@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-gem 'jekyll'
-gem 'guard'
-gem 'guard-livereload'
-gem 's3_website'
+gem "github-pages", "~> 228", group: :jekyll_plugins
+
+gem "webrick", "~> 1.8"
