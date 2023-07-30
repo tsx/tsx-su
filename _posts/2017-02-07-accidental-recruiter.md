@@ -3,7 +3,7 @@ layout: ar
 title: Accidental Recruiter
 category: ar
 ---
-[Close.io](http://close.io) has an awesome team I'm currently a part of, and I've been helping the team to grow recently. Specifically, looking at the very first stages of recruiting pipeline &mdash; basically screening developer resumes and checking out test assignments. There's *a lot* to learn from all kinds of applications and answers candidates send us, and I'd like to share some of my learnings with you :-)
+[Close](https://close.com) has an awesome team I'm currently a part of, and I've been helping the team to grow recently. Specifically, looking at the very first stages of recruiting pipeline &mdash; basically screening developer resumes and checking out test assignments. There's *a lot* to learn from all kinds of applications and answers candidates send us, and I'd like to share some of my learnings with you :-)
 
 We end up rejecting quite a number of applications at early stages. Very likely, among these candidates there are some brilliant people who might have been a great addition to our team. They just couldn't communicate their strengths and bright sides clearly enough.
 

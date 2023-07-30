@@ -20,11 +20,11 @@ The code for this project is [available at GitHub](https://github.com/tsx/shiref
 
 # Full Time Employment Experience
 
-## Close.io *(2016-current)*
+## Close *(2016-current)*
 
 ![](/img/close-io.png)
 
-At [Close.io](http://close.io), I'm working with a super-awesome, super-productive team to create a world-class best ever CRM. It's built around search, and has calls and emails integrated so salespeople have all communication at their fingertips.
+At [Close](https://close.com), I'm working with a super-awesome, super-productive team to create a world-class best ever CRM. It's built around search, and has calls and emails integrated so salespeople have all communication at their fingertips.
 
 I'm focused specifically on search, improving ElasticSearch-backed search engine and making UI more smooth easy to use.
 
