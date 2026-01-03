@@ -1,15 +1,17 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 
+import tailwindcss from "@tailwindcss/vite";
+
 export default defineConfig({
   site: "https://tsx.su",
   output: "static",
-  integrations: [tailwind()],
   markdown: {
     shikiConfig: {
       theme: "github-light",
     },
   },
+
   redirects: {
     // Old Jekyll URLs -> new clean URLs
     "/2010/02/19/meaning-of-life.html": "/meaning-of-life/",
@@ -39,5 +41,9 @@ export default defineConfig({
     "/2013/02/18/how-to-start-with-tdd.html": "/how-to-start-with-tdd-ru/",
     // RSS feed redirect
     "/feed.xml": "/rss.xml",
+  },
+
+  vite: {
+    plugins: [tailwindcss()],
   },
 });

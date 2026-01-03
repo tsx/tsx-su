@@ -1,6 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-brand-light: #79BD9A;
+  --color-brand: #3B8686;
+  --color-brand-dark: #0B486B;
+}
 
 @layer base {
   body {
