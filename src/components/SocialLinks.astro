@@ -1,0 +1,34 @@
+---
+import { Mail, Twitter, Github, Linkedin } from "lucide-astro";
+import {
+  EMAIL,
+  TWITTER_USERNAME,
+  GITHUB_USERNAME,
+  LINKEDIN_USERNAME,
+} from "@/consts";
+---
+
+<a class="icon-link" href={`mailto:${EMAIL}`} aria-label="Email">
+  <Mail class="inline-block h-5 w-5" />
+</a>
+<a
+  class="icon-link"
+  href={`https://twitter.com/${TWITTER_USERNAME}`}
+  aria-label="Twitter"
+>
+  <Twitter class="inline-block h-5 w-5" />
+</a>
+<a
+  class="icon-link"
+  href={`https://github.com/${GITHUB_USERNAME}`}
+  aria-label="GitHub"
+>
+  <Github class="inline-block h-5 w-5" />
+</a>
+<a
+  class="icon-link"
+  href={`https://linkedin.com/in/${LINKEDIN_USERNAME}`}
+  aria-label="LinkedIn"
+>
+  <Linkedin class="inline-block h-5 w-5" />
+</a>

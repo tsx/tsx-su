@@ -1,4 +1,23 @@
-_site
-.sass-cache
+# Astro
+node_modules/
+dist/
+.astro/
+
+# Environment
+.env
+.env.*
+
+# Editor
+.vscode/
+.idea/
+
+# Jekyll (legacy)
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+
+# Misc
 .s3_cred.yml
-vendor
+.DS_Store

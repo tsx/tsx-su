@@ -1,0 +1,25 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import PostPreview from "@/components/PostPreview.astro";
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("blog", ({ data }) => data.category === "ar");
+const sortedPosts = posts.sort((a, b) => {
+  const dateA = a.slug.match(/^(\d{4}-\d{2}-\d{2})/)?.[1] ?? "";
+  const dateB = b.slug.match(/^(\d{4}-\d{2}-\d{2})/)?.[1] ?? "";
+  return dateB.localeCompare(dateA);
+});
+---
+
+<BaseLayout title="Accidental Recruiter">
+  <h1>Accidental Recruiter</h1>
+
+  <p>
+    Life-time developer screening job applications. How fun does that sound? It
+    turns out, quite fun and a great learning experience. In this blog post
+    series, I will be sharing insights and helping you get more interviews than
+    you thought possible.
+  </p>
+
+  {sortedPosts.map((post) => <PostPreview post={post} />)}
+</BaseLayout>

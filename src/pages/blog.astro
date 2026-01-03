@@ -1,0 +1,22 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import PostPreview from "@/components/PostPreview.astro";
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("blog");
+const sortedPosts = posts.sort((a, b) => {
+  const dateA = a.slug.match(/^(\d{4}-\d{2}-\d{2})/)?.[1] ?? "";
+  const dateB = b.slug.match(/^(\d{4}-\d{2}-\d{2})/)?.[1] ?? "";
+  return dateB.localeCompare(dateA);
+});
+---
+
+<BaseLayout title="Blog">
+  <h1>Blog</h1>
+
+  {sortedPosts.map((post) => <PostPreview post={post} />)}
+
+  <p class="text-muted">
+    subscribe <a href="/rss.xml">via RSS</a>
+  </p>
+</BaseLayout>

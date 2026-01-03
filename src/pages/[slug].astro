@@ -1,0 +1,33 @@
+---
+import { getCollection } from "astro:content";
+import PostLayout from "@/layouts/PostLayout.astro";
+import ARLayout from "@/layouts/ARLayout.astro";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map((post) => {
+    // Remove date prefix from URL (YYYY-MM-DD-)
+    const urlSlug = post.slug.replace(/^\d{4}-\d{2}-\d{2}-/, "");
+    return {
+      params: { slug: urlSlug },
+      props: { post },
+    };
+  });
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+const isAR = post.data.postType === "ar" || post.data.category === "ar";
+---
+
+{
+  isAR ? (
+    <ARLayout post={post}>
+      <Content />
+    </ARLayout>
+  ) : (
+    <PostLayout post={post}>
+      <Content />
+    </PostLayout>
+  )
+}

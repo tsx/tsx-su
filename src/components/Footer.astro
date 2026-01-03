@@ -1,0 +1,11 @@
+---
+import { SITE_TITLE, SITE_DESCRIPTION } from "@/consts";
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="footer">
+  &copy; {currentYear} All Rights Reserved - {SITE_TITLE}
+  <br />
+  {SITE_DESCRIPTION}
+</footer>

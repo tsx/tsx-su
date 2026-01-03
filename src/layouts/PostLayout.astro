@@ -1,0 +1,41 @@
+---
+import type { CollectionEntry } from "astro:content";
+import BaseLayout from "./BaseLayout.astro";
+import ReadingTime from "@/components/ReadingTime.astro";
+
+interface Props {
+  post: CollectionEntry<"blog">;
+}
+
+const { post } = Astro.props;
+const { title, image, author, meta } = post.data;
+
+// Extract date from filename (format: YYYY-MM-DD-slug)
+const dateMatch = post.slug.match(/^(\d{4}-\d{2}-\d{2})/);
+const date = dateMatch ? new Date(dateMatch[1]) : new Date();
+
+const formattedDate = date.toLocaleDateString("en-US", {
+  month: "short",
+  day: "numeric",
+  year: "numeric",
+});
+---
+
+<BaseLayout title={title}>
+  <div class="post">
+    <header class="mb-8">
+      <h1 class="!mb-2 !mt-0">{title}</h1>
+      <p class="text-muted text-base">
+        {formattedDate}
+        <ReadingTime content={post.body} />
+        {author && <span> &bull; {author}</span>}
+        {meta && <span> &bull; {meta}</span>}
+      </p>
+    </header>
+
+    <article class="post-content prose prose-lg max-w-none">
+      {image && <img src={image} class="post-image" alt="" />}
+      <slot />
+    </article>
+  </div>
+</BaseLayout>

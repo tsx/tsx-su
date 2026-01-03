@@ -1,0 +1,31 @@
+---
+import type { CollectionEntry } from "astro:content";
+import PostLayout from "./PostLayout.astro";
+
+interface Props {
+  post: CollectionEntry<"blog">;
+}
+
+const { post } = Astro.props;
+---
+
+<PostLayout post={post}>
+  <p class="text-muted italic">
+    This post is part of <a href="/ar/">Accidental Recruiter</a> series.
+  </p>
+
+  <slot />
+
+  <p>
+    Want to learn more about how to increase your chances of getting through
+    resume filters? <a href="/ar/"
+      >Read more on my post series Accidental Recruiter</a
+    >.
+  </p>
+
+  <hr />
+  <p>
+    Interested in becoming my teammate in a small but super awesome company?
+    Apply for a job at <a href="https://jobs.close.com">Close</a>!
+  </p>
+</PostLayout>
