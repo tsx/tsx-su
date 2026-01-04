@@ -1,5 +1,6 @@
 ---
 title: Синглтон
+excerpt: "Singleton ломает тесты. Используй dependency injection."
 image: http://upload.wikimedia.org/wikipedia/commons/thumb/1/16/John_Singleton_2013.jpg/640px-John_Singleton_2013.jpg
 ---
 

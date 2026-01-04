@@ -1,6 +1,7 @@
 ---
 postType: ar
 title: Resume - common sections
+excerpt: "What goes in a resume and what you should leave out."
 category: ar
 ---
 

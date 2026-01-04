@@ -1,6 +1,7 @@
 ---
 postType: ar
 title: Accidental Recruiter
+excerpt: "Lessons from screening dev resumes: customize your application, and never lie."
 category: ar
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Игры со временем
+excerpt: "Про скорость воспроизведения. Зачем нужна, когда помогает."
 image: /img/The_Persistence_of_Memory.jpg
 ---
 

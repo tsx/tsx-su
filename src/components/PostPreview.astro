@@ -7,7 +7,7 @@ interface Props {
 }
 
 const { post } = Astro.props;
-const { title, image } = post.data;
+const { title, image, excerpt } = post.data;
 
 // Extract date from filename (format: YYYY-MM-DD-slug)
 const dateMatch = post.slug.match(/^(\d{4}-\d{2}-\d{2})/);
@@ -23,8 +23,6 @@ const formattedDate = date.toLocaleDateString("en-US", {
 const urlSlug = post.slug.replace(/^\d{4}-\d{2}-\d{2}-/, "");
 const postUrl = `/${urlSlug}/`;
 
-// Get excerpt (first paragraph, trimmed)
-const excerpt = post.body.split("\n\n")[0]!.substring(0, 200);
 ---
 
 <div class="post-content">
@@ -36,7 +34,7 @@ const excerpt = post.body.split("\n\n")[0]!.substring(0, 200);
     <ReadingTime content={post.body} />
   </span>
   {image && <img src={image} class="post-image" alt="" />}
-  <p>{excerpt}...</p>
+  {excerpt && <p>{excerpt}</p>}
   <p>
     <b><a href={postUrl} class="btn btn-lg btn-primary">Read &rarr;</a></b>
   </p>

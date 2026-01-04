@@ -1,6 +1,7 @@
 ---
 postType: ar
 title: Resume - Do's and don'ts in "Work Experience" section
+excerpt: "Do's and dont's for the critical work experience section on your resume: what to include, how to describe your accomplishments, and common mistakes to avoid."
 category: ar
 ---
 

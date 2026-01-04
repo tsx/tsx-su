@@ -1,5 +1,6 @@
 ---
 title: How to start with TDD
+excerpt: "Tests should run automatically. Otherwise you won't run them."
 ---
 
 <p class="text-muted"><em>This post is a translation of my older post written in Russian</em></p>

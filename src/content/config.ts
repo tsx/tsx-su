@@ -4,6 +4,7 @@ const blogCollection = defineCollection({
   type: "content",
   schema: z.object({
     title: z.string(),
+    excerpt: z.string().optional(),
     postType: z.enum(["post", "ar"]).optional().default("post"),
     category: z.string().optional(),
     author: z.string().optional(),
