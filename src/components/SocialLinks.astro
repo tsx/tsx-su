@@ -1,10 +1,16 @@
 ---
-import { Mail, Twitter, Github, Linkedin } from "lucide-astro";
+import Mail from "@lucide/astro/icons/mail";
+import Linkedin from "@/components/icons/Linkedin.astro";
+import X from "simple-icons-astro/X";
+import Github from "simple-icons-astro/Github";
+import Telegram from "simple-icons-astro/Telegram";
+
 import {
   EMAIL,
   TWITTER_USERNAME,
   GITHUB_USERNAME,
   LINKEDIN_USERNAME,
+  TELEGRAM_USERNAME,
 } from "@/consts";
 ---
 
@@ -16,7 +22,7 @@ import {
   href={`https://twitter.com/${TWITTER_USERNAME}`}
   aria-label="Twitter"
 >
-  <Twitter class="inline-block h-5 w-5" />
+  <X class="inline-block h-5 w-5" />
 </a>
 <a
   class="icon-link"
@@ -31,4 +37,11 @@ import {
   aria-label="LinkedIn"
 >
   <Linkedin class="inline-block h-5 w-5" />
+</a>
+<a
+  class="icon-link"
+  href={`https://t.me/${TELEGRAM_USERNAME}`}
+  aria-label="LinkedIn"
+>
+  <Telegram class="inline-block h-5 w-5" />
 </a>

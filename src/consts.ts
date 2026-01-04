@@ -4,5 +4,6 @@ export const SITE_DESCRIPTION =
 export const SITE_URL = "https://tsx.su";
 export const EMAIL = "tsx@tsx.su";
 export const TWITTER_USERNAME = "tsxxst";
+export const TELEGRAM_USERNAME = "tsxxst";
 export const GITHUB_USERNAME = "tsx";
 export const LINKEDIN_USERNAME = "tverskoy";

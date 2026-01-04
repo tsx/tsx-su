@@ -1,18 +1,18 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-light: #79BD9A;
-  --color-brand: #3B8686;
-  --color-brand-dark: #0B486B;
+  --color-brand-light: #79bd9a;
+  --color-brand: #3b8686;
+  --color-brand-dark: #0b486b;
 }
 
 @layer base {
   body {
-    @apply mx-auto max-w-2xl px-4 py-8 font-sans text-lg leading-relaxed text-brand-dark;
+    @apply text-brand-dark mx-auto max-w-2xl px-4 py-8 font-sans text-lg leading-relaxed;
   }
 
   a {
-    @apply text-brand underline transition-colors hover:text-brand-light;
+    @apply text-brand hover:text-brand-light underline transition-colors;
   }
 
   h1,
@@ -21,7 +21,7 @@
   h4,
   h5,
   h6 {
-    @apply mb-3 mt-6 font-bold leading-tight;
+    @apply mt-6 mb-3 leading-tight font-bold;
   }
 
   h1 {
@@ -45,7 +45,7 @@
   }
 
   hr {
-    @apply my-8 border-brand-light/30;
+    @apply border-brand-light/30 my-8;
   }
 }
 
@@ -55,7 +55,7 @@
   }
 
   .post-image {
-    @apply float-left mb-4 mr-4 w-1/2;
+    @apply float-left mr-4 mb-4 w-1/2;
   }
 
   .post-content {
