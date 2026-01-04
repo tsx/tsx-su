@@ -1,6 +1,6 @@
 ---
 title: Игры со временем
-image: https://upload.wikimedia.org/wikipedia/ru/archive/d/dd/20090517010837!The_Persistence_of_Memory.jpg
+image: /img/The_Persistence_of_Memory.jpg
 ---
 
 Время — пожалуй, единственное явление, над которым человек не имеет практически никакой власти.

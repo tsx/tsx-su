@@ -1,6 +1,6 @@
 ---
 title: Вершитель
-image: http://upload.wikimedia.org/wikipedia/ru/0/0c/Versh_frai.jpg
+image: /img/Versh_frai.jpg
 ---
 
 Есть такой писатель Макс Фрай.
