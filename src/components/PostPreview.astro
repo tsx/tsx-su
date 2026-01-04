@@ -11,7 +11,7 @@ const { title, image } = post.data;
 
 // Extract date from filename (format: YYYY-MM-DD-slug)
 const dateMatch = post.slug.match(/^(\d{4}-\d{2}-\d{2})/);
-const date = dateMatch ? new Date(dateMatch[1]) : new Date();
+const date = dateMatch ? new Date(dateMatch[1]!) : new Date();
 
 const formattedDate = date.toLocaleDateString("en-US", {
   month: "short",
@@ -24,7 +24,7 @@ const urlSlug = post.slug.replace(/^\d{4}-\d{2}-\d{2}-/, "");
 const postUrl = `/${urlSlug}/`;
 
 // Get excerpt (first paragraph, trimmed)
-const excerpt = post.body.split("\n\n")[0].substring(0, 200);
+const excerpt = post.body.split("\n\n")[0]!.substring(0, 200);
 ---
 
 <div class="post-content">

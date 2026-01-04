@@ -20,7 +20,7 @@ export async function GET(context: APIContext) {
     site: context.site ?? SITE_URL,
     items: sortedPosts.map((post) => {
       const dateMatch = post.slug.match(/^(\d{4}-\d{2}-\d{2})/);
-      const pubDate = dateMatch ? new Date(dateMatch[1]) : new Date();
+      const pubDate = dateMatch ? new Date(dateMatch[1]!) : new Date();
       const urlSlug = post.slug.replace(/^\d{4}-\d{2}-\d{2}-/, "");
 
       return {

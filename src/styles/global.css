@@ -54,10 +54,6 @@
     @apply mr-3 inline-block text-lg no-underline transition-transform duration-200 hover:scale-110;
   }
 
-  .photo {
-    @apply float-right max-w-14 rounded-full;
-  }
-
   .post-image {
     @apply float-left mb-4 mr-4 w-1/2;
   }
@@ -68,9 +64,5 @@
 
   .text-muted {
     @apply text-gray-500;
-  }
-
-  .footer {
-    @apply mb-8 mt-8 text-gray-500;
   }
 }
