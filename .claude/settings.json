@@ -1,5 +1,9 @@
 {
   "permissions": {
-    "allow": ["Bash(pnpm format:*)", "WebFetch(domain:docs.astro.build)"]
+    "allow": [
+      "Bash(pnpm format:*)",
+      "WebFetch(domain:docs.astro.build)",
+      "WebSearch"
+    ]
   }
 }
