@@ -1,14 +1,17 @@
 ---
 title: Смысл жизни / The meaning of life
-excerpt: "Жизнь в том, чтобы жить, не думая что её нет. Вывод: живи в удовольствие."
+excerpt:
+  "Жизнь в том, чтобы жить, не думая что её нет. Вывод: живи в удовольствие."
 ---
 
-Смысл жизни в том, чтобы жить, не замечая того факта, что смысла жизни не существует.
+Смысл жизни в том, чтобы жить, не замечая того факта, что смысла жизни не
+существует.
 
 Вывод: живи в свое удовольствие.
 
 ---
 
-The meaning of life is to live without acknowledging the fact that there's not purpose to life.
+The meaning of life is to live without acknowledging the fact that there's not
+purpose to life.
 
 Conclustion: Enjoy the journey.

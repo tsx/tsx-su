@@ -31,6 +31,14 @@ const formattedDate = date.toLocaleDateString("en-US", {
         {author && <span> &bull; {author}</span>}
         {meta && <span> &bull; {meta}</span>}
       </p>
+      {
+        post.data.importedFromClose && (
+          <p class="text-muted">
+            This post was written by me for Close and initially{" "}
+            <a href={post.data.importedFromClose}>published on their blog.</a>
+          </p>
+        )
+      }
     </header>
 
     <article class="post-content prose prose-lg max-w-none">

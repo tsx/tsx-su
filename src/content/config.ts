@@ -6,6 +6,7 @@ const blogCollection = defineCollection({
     title: z.string(),
     excerpt: z.string().optional(),
     postType: z.enum(["post", "ar"]).optional().default("post"),
+    importedFromClose: z.string().optional(),
     category: z.string().optional(),
     author: z.string().optional(),
     image: z.string().optional(),
